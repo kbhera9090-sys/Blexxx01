@@ -77,12 +77,12 @@
        /* =============== LOGO IMAGE STYLE ==================== */
        /* ===================================================== */
        /* YAHAN APNA LOGO IMAGE LAGAO */
-       .logo-img { https://ibb.co/GqJcCLK
-           height: 50px;
-           width: auto;
-           border-radius: 10px;
-           object-fit: contain;
-       }
+       ..logo-img{
+    height:45px;
+    width:45px;
+    border-radius:50%;
+    object-fit:cover;
+}
 
        .logo i {
            font-size: 2rem;
@@ -1127,17 +1127,19 @@
 
        @media (max-width: 768px) {
            .nav-links {
-               position: fixed;
-               top: 70px;
-               right: -100%;
-               width: 80%;
-               max-width: 300px;
-               height: calc(100vh - 70px);
-               background: var(--ocean-deep);
-               flex-direction: column;
-               padding: 2rem;
-               transition: var(--transition);
-           }
+    position: fixed;
+    top: 70px;
+    right: -100%;
+}
+
+.logo-img{
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+}
 
            .nav-links.active {
                right: 0;
